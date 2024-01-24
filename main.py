@@ -4,6 +4,11 @@ import os
 from spotipy.oauth2 import SpotifyOAuth
 from bs4 import BeautifulSoup
 
+# CLIENT_ID is given via Spotify
+# CLIENT_SECRET is given via Spotify
+# SPOTIFY_USERNAME is given via Spotify
+# EXAMPLE_URL is given via Spotify
+# All of these variables are environmental variables for security
 CLIENT_ID = os.environ["CLIENT_ID"]
 CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 SPOTIFY_USERNAME = os.environ["SPOTIFY_USERNAME"]
@@ -25,6 +30,7 @@ top_100 = [song.text.strip() for song in songs]
 print(top_100)
 
 # Spotify Authentication #
+# token.txt is given via Spotify and added to a text file named "token.txt" placed in directory next to main.py
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
