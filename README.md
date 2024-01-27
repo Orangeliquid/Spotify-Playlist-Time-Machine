@@ -9,7 +9,6 @@ Before running the script, ensure you have the following environmental variables
 - `CLIENT_SECRET`: Spotify client secret.
 - `SPOTIFY_USERNAME`: Your Spotify username.
 - `EXAMPLE_URL`: Spotify example URL (for authentication).
-- `EXAMPLE_URL`: Spotify example URL (for authentication).
 
 Make sure to obtain these values from the Spotify Developer Dashboard.
 
