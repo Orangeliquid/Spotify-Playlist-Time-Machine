@@ -15,7 +15,7 @@ Make sure to obtain these values from the Spotify Developer Dashboard.
 ## Usage
 1. Run the script using:
     ```bash
-    python spotify_playlist_creator.py
+    python spotify_timemachine.py
     ```
 2. Input the year you want to travel to when prompted.
 3. The script fetches the top 100 songs from Billboard for the specified year and creates a new Spotify playlist.
